@@ -16,8 +16,8 @@
         <div class="row">
             <h4 class="mt-2 ml-5 text-white">PrimedPoll</h4>
             <div class="col-lg-6 col-md-8 col-sm-10 col-12 row ec_signup-form">
-                <form action="" class="col-12 ec_form ml-3 mt-5">
-                    <p class="text-center ec_lg-text text-white">Sign In</p>
+                <form action="" class="col-12 ec_form ml-3 mt-5" method="POST" id="sign_up">
+                    <p class="text-center ec_lg-text text-white">Sign Up</p>
                     <div class="form-group row">
                         <label for="email" class="text-white col-2 mt-2">Email</label>
                         <div class=" ml-3 col-8">
@@ -39,8 +39,8 @@
                         </div>
                     </div>
                     <div class="form-check text-center">
-                        <input class="form-check-input" type="checkbox" name="tccheckbox" id="ec_tccheckbox"
-                            value="option1" unchecked>
+                        <input class="form-check-input" type="checkbox" name="pollCheckbox" id="ec_tccheckbox"
+                            value="termsAndConditions">
                         <label class="form-check-label ec_text-grey" for="ec_tccheckbox">
                             <small>By clicking, you accept our terms and conditions</small>
                         </label>
@@ -60,7 +60,8 @@
 
         </div>
     </div>
-
+    <script src="js/axios.js"></script>
+    <script src="js/signup.js"></script>
 </body>
 
 </html>
