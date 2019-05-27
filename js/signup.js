@@ -26,15 +26,10 @@ if (sign_up) {
         }
 
         const sign_upUrl = "http://13.59.91.161:8000/api/register";
-        console.log("what did you do");
 
 
         axios.post(sign_upUrl, userData).then(function (response) {
-
-            console.log("I can't hear you")
             console.log(response.data)
-
-
           /*  const token = response.data.token
 
             localStorage.setItem('primepoll_token', token);
